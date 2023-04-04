@@ -7,5 +7,10 @@ import (
 )
 
 func TestShared(t *testing.T) {
-	tests.All(Default, t)
+	tests.Test_All(Default, t)
 }
+
+func BenchmarkShared(b *testing.B) {
+	tests.Benchmark_All(Default, b)
+}
+
